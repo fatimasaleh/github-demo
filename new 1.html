@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/sheet.css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</script>
+</head>
+<body>
+<div class="nav-contener" style="margin-top: -30px;">
+	<ul class="navbar">
+		<li class="nav-item"><a href="hom.html">home</a></li>
+		<li class="nav-item"><a href="about.html">about</a></li>
+		<li class="nav-item"><a href="n.html">servic</a></li>
+	</ul>
+</div>
+
+<div class="slideshow-container">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="text">our stor are everywhere</div>
+  </div>
+  <div class="mySlides fade">
+    <img src="img/front2.jpeg" style="width:100%">
+    <div class="text">with high qulity prodect</div>
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+<!-- gallery section-->
+<br />
+<div class="gallery" align="center">
+	<div class="thumbnails">
+		<img onmouseover="preview.src=gstevewall1.src" name="gstevewall1" src="images/co.jpg" alt="fatima^^" />
+	    <img onmouseover="preview.src=gstevewall2.src" name="gstevewall2" src="images/3.jpg" alt="fatima^^" />
+		<img onmouseover="preview.src=gstevewall3.src" name="gstevewall3" src="images/4.jpg" alt="fatima^^" />
+		<img onmouseover="preview.src=gstevewall4.src" name="gstevewall4" src="images/5.jpg" alt="fatima^^" />
+		<img onmouseover="preview.src=gstevewall5.src" name="gstevewall5" src="images/6.jpg" alt="fatima^^" />
+	</div>
+	
+	<div class="preview" align="center">
+		<img name="preview" src="images/2.jpg" alt="" />
+	</div>
+</div>
+<!--footer-->
+<div class="footer">
+<div class="box1">
+	<h1> prodect </h1>
+<p> our prodect is the best <br/>
+ it is up to deate with <br/>
+ global maket
+</p>
+</div>
+<div class="box2">
+	<h1> offer  </h1>
+<p> our offer is the best <br/>
+ is alwayes different from  <br/>
+ the othier 
+ global maket
+</p>
+</div>
+<div class="box3">
+	<h1> shipping  </h1>
+<p> our way in delver the  <br/>
+ the prodect is always safe   <br/>
+and fast 
+</p>
+</div>
+  <a href="#"><u class="fa fa-dribbble"></u></a> 
+  <a href="#"><u class="fa fa-twitter"></u></a> 
+  <a href="#"><u class="fa fa-linkedin"></u></a> 
+  <a href="#"><u class="fa fa-facebook"></u></a>
+</div>
+
+<script type="text/javascript" >
+	
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} </script>
+
+</body>
+
+</html>
